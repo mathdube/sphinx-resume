@@ -14,7 +14,6 @@ Mathieu's Resume
 
 .. note:: This resume was created with Python, Sphinx and Jinja2
 
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
