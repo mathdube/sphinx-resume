@@ -21,12 +21,14 @@ import datetime
 
 # -- Project information -----------------------------------------------------
 
-project = "Mathieu's Resume"
+project = "Mathieu`s Resume"
 copyright = '2020, Mathieu Dube'
 author = 'Mathieu Dube'
 
+today = datetime.datetime.now().strftime("%d %B, %Y	")
+
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = today
 
 
 # -- General configuration ---------------------------------------------------
@@ -60,7 +62,7 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinxdoc'
+html_theme = 'bizstyle'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -88,14 +90,14 @@ def setup(app):
 
 cv_data = None
 
-with open("locale/en.yaml", 'r') as f :
+with open("locale/en.yaml", 'r', encoding='utf8') as f :
     cv_data = yaml.load(f)
 
 first_day = datetime.datetime.fromtimestamp(1304254800)
 
 years_experience = round((datetime.datetime.now() - first_day).days / 365)
 
-today = datetime.datetime.now().strftime("%d %B, %Y	")
+
 
 html_context = {
     'cv_data': cv_data,

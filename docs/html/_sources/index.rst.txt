@@ -1,7 +1,3 @@
-.. Mathieu's Resume documentation master file, created by
-   sphinx-quickstart on Thu Apr  9 11:27:55 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
 Mathieu's Resume
 ==============================================================
@@ -12,7 +8,7 @@ Mathieu's Resume
 
 **Devops and project delivery**
 
-.. note:: This resume was created with Python, Sphinx and Jinja2
+The latest version of this resume can be found at https://mathdube.github.io/sphinx-resume/build/html/
 
 .. toctree::
    :maxdepth: 2
@@ -24,7 +20,6 @@ Mathieu's Resume
 
 {{ cv_data.profile.text }}
 
-
 {{ cv_data.experiences.title }}
 =========================================================================
 
@@ -33,12 +28,25 @@ Mathieu's Resume
 #########################################################################
 {{ c.from }} until {{ c.until  }} | {{c.location}}
 
+{% for t in c.titles %}
 
-**{{c.title}}**
 
-{% for a in c.activites %}
+**{{t.title}}**
+
+{% for a in t.activites %}
 * {{a}}
-{% endfor %}
+{% endfor %} {# Activies #}
+{% endfor %} {# Titles #}
+{% endfor %} {# Companies #}
+
+{{ cv_data.academics.title }}
+=========================================================================
+{% for p in cv_data.academics.programs %}
+{{p.school}} - {{p.location}}
+#########################################################################
+**{{p.program}}**
+
+Obtained {{ p.obtained  }}
 {% endfor %}
 
 {{ cv_data.skills.title }}
@@ -46,3 +54,9 @@ Mathieu's Resume
 {% for s in cv_data.skills.sections %}
 **{{s.name}}** : {% for skill in s.skills  %} {{skill}}{{ "," if not loop.last }} {% endfor %}
 {% endfor %}
+
+.. note:: This resume was created with Python, Sphinx and Jinja2.
+
+   See the project and source code at https://github.com/mathdube/sphinx-resume
+
+   HTML version available at https://mathdube.github.io/sphinx-resume/build/html/

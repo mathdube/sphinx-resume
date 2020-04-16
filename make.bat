@@ -8,7 +8,7 @@ if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build.exe
 )
 set SOURCEDIR=source
-set BUILDDIR=build
+set BUILDDIR=docs
 
 if "%1" == "" goto help
 
@@ -25,7 +25,8 @@ if errorlevel 9009 (
 	exit /b 1
 )
 
-%SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
+%SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O% -E
+echo "" > %BUILDDIR%\html\.nojekyll
 goto end
 
 :help

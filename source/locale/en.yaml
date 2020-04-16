@@ -18,22 +18,67 @@ experiences:
       from: January 2019
       until: present
       location: Hong Kong
-      title: Devops IAM and Privilege Access Products
-      activites:
-        - Automation of operational tasks using python.
-        - Building automated deployment scripts for the CICD pipeline using Ansible.
-        - Wrote custom Ansible module.
-        - Worked hand in hand with the development team to ensure platform availability.
+      titles:
+        - title: Devops IAM and Privilege Access Products
+          activites:
+            - Automation of operational tasks using python.
+            - Building automated deployment scripts for the CICD pipeline using Ansible.
+            - Wrote custom Ansible module.
+            - Worked hand in hand with the development team to ensure IAM and privilege access platforms availability.
     - name: Manpower
       from: July 2018
       until: December 2018
       location: Hong Kong
-      title: Client - AXA Technology Services
-      activites:
-        - Continued IAM role for AXA.
-        - Deployed B2C user base for AXA Hong Kong Mobile Application.
+      titles:
+        - title: Client - AXA Technology Services
+          activites:
+            - Continued IAM role for AXA.
+            - Deployed B2C user base for AXA Hong Kong Mobile Application.
+    - name: AXA Technology Services Hong Kong
+      from: November 2016
+      until: June 2018
+      location: Hong Kong
+      titles:
+        - title: IAM and API manager SME for APAC region
+          activites:
+            - Counseled regional client in the implementation of their IAM and API needs.
+            - Maintained and supported oAuth2 platform and Siteminder for APAC in B2C and internal users.
+            - Security hardened API endpoints and advised client on API industry standards.
+            - Automation of day to day tasks and empowerment of level 2 support team.
+            - Facilitated the implementation of 2-factor authentication for the APAC region.
+    - name: Facilité Informatique
+      from: March 2014
+      until: October 2016
+      location: Montréal, QC, Canada
+      titles:
+        - title: Client - AXA Technologies Corporate
+          activites:
+            - Definition, implementation, enhancement and support of the mobile authentication service using CA API Management.
+            - Developed the oAuth 2.0 solution and openID connect solutions used by AXA using CA API assertionbased language.
+            - Provided a level 3 support for AXA Tech local and regional for CA API Management and Siteminder.
+            - Scripted a data gathering, transfer and load script to automate transfer of daily utilization data of the web authentication platform into Kibana ElasticSearch using Python
+        - title: Client - Bombardier Aerospace
+          activites:
+            - Took charge of project teams in the resolution of advanced problems linked to security and access management.
+            - Deployed SAML 2.0 Federation with providers such as ServiceNow, Salesforce and providers using SimpleSAML
+            - Migration of Siteminder 12.5 to 12.52.
+            - Migration of applications and servers load balanced with a legacy Cisco load balancer to F5 LTM.
+        - title: Other Clients - Pratt & Whitney, Industrielle Alliance and Banque Laurentienne
+          activites:
+            - Provided punctual advices and services for Siteminder on a need by need basis.
+    - name: Bombardier Aerospace
+      from: May 2011
+      until: March 2014
+      location: Montréal, QC, Canada
+      titles:
+        - title: IAM and Web Security Specialist - Project Delivery
+          activites:
+            - Installed and configured a new Siteminder 12.5 environment and migrated data from Siteminder 6.0.
+            - Racked, install and configure the first F5 load balancing solution for the company to replace Cisco.
+            - Helped with the conception of security guidelines surrounding access management and identity.
+            - Administrated LDAP data and servers with the use of scripts and LDIF files.
 skills:
-  title: Skills
+  title: Technical Skills
   sections:
     - name: Programming/scripting languages
       skills:
@@ -70,3 +115,10 @@ skills:
       skills:
         - Google Cloud Platform
         - AWS
+academics:
+  title: Academic Training
+  programs:
+    - school: Concordia University
+      location: Montréal, QC, Canada
+      program:  Bachelor of Engineering - Computer Engineering
+      obtained: 2011
