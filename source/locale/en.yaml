@@ -1,0 +1,72 @@
+---
+contact:
+  phone: +852 5605 5639
+  email: math.dube@gmail.com
+  location: Hong Kong
+
+profile:
+  title: Profile
+  text:
+    8 year experience in project delivery IT with a Bachelor of Engineering in Computer engineering from Concordia University in Montreal, Canada. Web technologies expert, web programming and scripting, security and access management and multi-system administrator. Project-oriented and motivated by the learning of new technologies and project delivery. International experience with two year in Hong Kong, another one in France and many in Canada.
+
+    Self-driven and interested in the future of securing the web and APIs, managing services for increasing continuity and delivering value to the stakeholders and usability to customers.
+
+experiences:
+  title: Professional experiences
+  companies:
+    - name: Morgan Stanley
+      from: January 2019
+      until: present
+      location: Hong Kong
+      title: Devops IAM and Privilege Access Products
+      activites:
+        - Automation of operational tasks using python.
+        - Building automated deployment scripts for the CICD pipeline using Ansible.
+        - Wrote custom Ansible module.
+        - Worked hand in hand with the development team to ensure platform availability.
+    - name: Manpower
+      from: July 2018
+      until: December 2018
+      location: Hong Kong
+      title: Client - AXA Technology Services
+      activites:
+        - Continued IAM role for AXA.
+        - Deployed B2C user base for AXA Hong Kong Mobile Application.
+skills:
+  title: Skills
+  sections:
+    - name: Programming/scripting languages
+      skills:
+        - python
+        - bash
+        - html
+        - Angular JS
+    - name: Devops and deployment
+      skills:
+        - Ansible
+        - Jenkins
+        - CICD
+        - Jira
+        - Git
+        - PyTest and UnitTest
+    - name: Products
+      skills:
+        - Siteminder
+        - Layer7 API Gateway
+        - F5 LTM
+        - Apache HTTPd
+    - name: Protocols
+      skills:
+        - HTTP
+        - SSL / TLS
+        - Oauth 2.0 / OpenID Connect
+        - SAML
+        - LDAP
+    - name: OS
+      skills:
+        - Linux
+        - Windows Server
+    - name: Cloud
+      skills:
+        - Google Cloud Platform
+        - AWS

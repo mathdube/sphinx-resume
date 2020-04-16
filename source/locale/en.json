@@ -1,0 +1,47 @@
+{
+    "experiences" : {
+      "title": "Professional experiences",
+      "data": [
+        {
+          "name": "Morgan Stanley",
+          "from": "January 2019",
+          "until": "Now",
+          "location" : "Hong Kong",
+          "title" : "Devops IAM and Privilege Access Products",
+          "activites": [
+            "Automation of operational tasks using python.",
+            "Building automated deployment scripts for the CICD pipeline using Ansible.",
+            "Wrote custom Ansible module.",
+            "Worked hand in hand with the development team to ensure platform availability."
+          ]
+        },
+        {
+          "name": "Manpower (for AXA Technology Services)",
+          "from": "January 2019",
+          "until": "Now",
+          "location" : "Hong Kong",
+          "title" : "Devops IAM and Privilege Access Products",
+          "activites": [
+            "Automation of operational tasks using python.",
+            "Building automated deployment scripts for the CICD pipeline using Ansible.",
+            "Wrote custom Ansible module.",
+            "Worked hand in hand with the development team to ensure platform availability."
+          ]
+        },
+        {
+          "name": "AXA Technology Services",
+          "from": "January 2019",
+          "until": "Now",
+          "location" : "Hong Kong",
+          "title" : "Devops IAM and Privilege Access Products",
+          "activites": [
+            "Automation of operational tasks using python.",
+            "Building automated deployment scripts for the CICD pipeline using Ansible.",
+            "Wrote custom Ansible module.",
+            "Worked hand in hand with the development team to ensure platform availability."
+          ]
+        }
+      ]
+}
+
+}
