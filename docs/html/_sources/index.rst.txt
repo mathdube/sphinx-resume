@@ -8,7 +8,7 @@ Mathieu's Resume
 
 **Devops and project delivery**
 
-The latest version of this resume can be found at https://mathdube.github.io/sphinx-resume/build/html/
+Latest version available at https://mathdube.github.io/sphinx-resume/docs/html/
 
 .. toctree::
    :maxdepth: 2
