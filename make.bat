@@ -5,7 +5,7 @@ pushd %~dp0
 REM Command file for Sphinx documentation
 
 if "%SPHINXBUILD%" == "" (
-	set SPHINXBUILD=sphinx-build.exe
+	set SPHINXBUILD=C:\Python38-32\Scripts\sphinx-build.exe
 )
 set SOURCEDIR=source
 set BUILDDIR=docs
@@ -25,7 +25,9 @@ if errorlevel 9009 (
 	exit /b 1
 )
 
-%SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O% -E
+%SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O% -E -D language=fr
+copy %BUILDDIR%\html\index.html %BUILDDIR%\html\index_fr.html
+%SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O% -E -D language=en
 echo "" > %BUILDDIR%\html\.nojekyll
 goto end
 

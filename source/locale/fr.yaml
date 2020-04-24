@@ -1,0 +1,133 @@
+---
+contact:
+  phone: +852 5605 5639
+  email: math.dube@gmail.com
+  location: Hong Kong
+
+profile:
+  title: Profile
+  tag: Spécialiste Sécurité - Gestion de accès - Seécurité Web et APIs - Devops et livraison de projets.
+  text:
+    J'ai plusieurs années d'expériences en gestion d'accès et d'identités ainsi qu'en sécurité des API conseillant les clients sur leur stratégie d'implementation et a supporter l'infrastrucuture.
+
+    J'ai aussi un penchant pour la programmation, surtout en Python, autant en tant que loisir que pour l'automatisation des procédures répétitives.
+
+experiences:
+  title: Expériences Professionelles
+  companies:
+    - name: Morgan Stanley
+      from: Janvier 2019
+      until: présent
+      location: Hong Kong
+      titles:
+        - title: Devops IAM et gestion des accès privilégiés
+          activites:
+            - Automatisation des procédures avec Python.
+            - Configurations de pipelines automatisée CICD avec Jenkins, Git et Ansible
+            - Dévelopement de module Ansible pour les besoins de l'entreprise.
+            - Support des produits en collaboration avec les équipes des dévelopement.
+    - name: Manpower
+      from: Juillet 2018
+      until: Décembre 2018
+      location: Hong Kong
+      titles:
+        - title: Client - AXA Technology Services
+          activites:
+            - Continuation du role chez AXA Tech.
+            - Déploiement de l'infrastructure d'authentification B2C pour une platforme mobile.
+    - name: AXA Technology Services Hong Kong
+      from: Novembre 2016
+      until: Juin 2018
+      location: Hong Kong
+      titles:
+        - title: SME IAM et gestion des APIs.
+          activites:
+            - Conseil des client pour leur besoin d'implémentation IAM et gestion des API.
+            - Maintenance et support des produits Siteminder et oAuth2 pour la région APAC pour B2C et employées
+            - Configration des paramètres des sécurité pour la gestion d'API
+            - Automatisation des tâches et habilitation des équipe de support niveau 2.
+            - Facilitation de l'implémentation du système 2 facteur dans la région APAC.
+    - name: Facilité Informatique
+      from: Mars 2014
+      until: Octobre 2016
+      location: Montréal, QC, Canada
+      titles:
+        - title: Client - AXA Technologies Corporate
+          activites:
+            - Définition, implementation et maintenance du service d'authentification mobile oauth2 avec CA API management.
+            - Dévelopement de la solution oAuth 2.0 / Openid Connect avec le language CA API management.
+            - Support niveau 3 de Siteminder et CA API management.
+            - Élaboration des scripts pour le monitoring et l'automatisation de la collection de data avec Python et Kibana - Elastic Search
+        - title: Client - Bombardier Aéoronautique
+          activites:
+            - Prise en charge des projets et de la résolution de problèmes dans la gestion des accès.
+            - Déploiement de solution de fédération utilisant SAML 2.0 avec des service tel que ServiceNow et Salesforce
+            - Migration de la platforme Siteminder de la version 12.5 à la version 12.52.
+            - Migration des application et serveurs de Cisco Load Balancer vers F5 LTM
+        - title: Autres Client - Pratt & Whitney, Industrielle Alliance and Banque Laurentienne
+          activites:
+            - Conseils ponctuel selon le besoin pour leur besoins sur la platforme Siteminder.
+    - name: Bombardier Aéoronautique
+      from: Mai 2011
+      until: Mars 2014
+      location: Montréal, QC, Canada
+      titles:
+        - title: Spécialist Web et IAM - Délivrance de projets.
+          activites:
+            - Installation et configuration de la nouvelle infrastructure de siteminder version 6.0 vers la version 12.5.
+            - Installation des serveur, installation et configuration la permière solution F5 LTM pour le remplacement de Cisco.
+            - Assistances des projets pour la configuration de leur solution IAM et guidelines de sécurité.
+            - Administration des serveur et service LDAP avec l'aide de scripts.
+skills:
+  title: Compétences Techniques
+  sections:
+    - name: Languages de programmation/scripting
+      skills:
+        - python
+        - bash
+        - html
+        - Angular JS
+    - name: Devops et deploiement
+      skills:
+        - Ansible
+        - Jenkins
+        - CICD
+        - Jira
+        - Git
+        - PyTest and UnitTest
+    - name: Produits
+      skills:
+        - Siteminder
+        - Layer7 API Gateway
+        - F5 LTM
+        - Apache HTTPd
+    - name: Protocoles
+      skills:
+        - HTTP
+        - SSL / TLS
+        - Oauth 2.0 / OpenID Connect
+        - SAML
+        - LDAP
+    - name: OS
+      skills:
+        - Linux
+        - Windows Server
+    - name: Cloud
+      skills:
+        - Google Cloud Platform
+        - AWS
+academics:
+  title: Formation Académique
+  programs:
+    - school: Concordia University
+      location: Montréal, QC, Canada
+      program:  Baccalauréat en génie  - Génie Informatique
+      obtained: 2011
+
+text:
+  latest_available: La version la plus récente disponible ici
+  until: jusqu'à
+  years_experience: années d'expérience.
+  project_source: Voir le projet et le code source ici
+  html_version: La version HTML est disponible ici
+  created_with: Ce CV a été créé a l'aide de

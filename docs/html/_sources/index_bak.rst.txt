@@ -1,12 +1,14 @@
 
-Mathieu Dubé
+Mathieu's Resume
 ==============================================================
 
-**{{years_experience}} {{cv_data.text.years_experience}}**
+**{{years_experience}} years of experience** when last compiled on {{today}}
 
-**{{cv_data.profile.tag}}**
+**Security Specialist  - Identity and Access management - Web and API security**
 
-{{cv_data.text.latest_available}}  https://mathdube.github.io/sphinx-resume/html/
+**Devops and project delivery**
+
+Latest version available at https://mathdube.github.io/sphinx-resume/html/
 
 .. toctree::
    :maxdepth: 2
@@ -24,7 +26,7 @@ Mathieu Dubé
 {% for c in cv_data.experiences.companies %}
 {{c.name}}
 #########################################################################
-{{ c.from }} {{cv_data.text.until}} {{ c.until  }} | {{c.location}}
+{{ c.from }} until {{ c.until  }} | {{c.location}}
 
 {% for t in c.titles %}
 
@@ -53,11 +55,8 @@ Obtained {{ p.obtained  }}
 **{{s.name}}** : {% for skill in s.skills  %} {{skill}}{{ "," if not loop.last }} {% endfor %}
 {% endfor %}
 
-.. note:: {{cv_data.text.created_with}}
-    * Python
-    * Sphinx
-    * Jinja2 templates.
+.. note:: This resume was created with Python, Sphinx and Jinja2.
 
-   {{cv_data.text.project_source}} https://github.com/mathdube/sphinx-resume
+   See the project and source code at https://github.com/mathdube/sphinx-resume
 
-   {{cv_data.text.html_version}} https://mathdube.github.io/sphinx-resume/html/
+   HTML version available at https://mathdube.github.io/sphinx-resume/html/

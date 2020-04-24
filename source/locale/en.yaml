@@ -4,12 +4,15 @@ contact:
   email: math.dube@gmail.com
   location: Hong Kong
 
+
+
 profile:
   title: Profile
+  tag: Security Specialist - Identity and Access management - Web and API security - Devops and project delivery
   text:
-    8 year experience in project delivery IT with a Bachelor of Engineering in Computer engineering from Concordia University in Montreal, Canada. Web technologies expert, web programming and scripting, security and access management and multi-system administrator. Project-oriented and motivated by the learning of new technologies and project delivery. International experience with two year in Hong Kong, another one in France and many in Canada.
+    I have many years of experience in the Identity and Access management and API endpoints space helping customers design and build their security architecture.
 
-    Self-driven and interested in the future of securing the web and APIs, managing services for increasing continuity and delivering value to the stakeholders and usability to customers.
+    I'm also interested in programming, primilary Python, both as a hobby and as a way to automate away the day to day repetitions of tasks.
 
 experiences:
   title: Professional experiences
@@ -22,7 +25,7 @@ experiences:
         - title: Devops IAM and Privilege Access Products
           activites:
             - Automation of operational tasks using python.
-            - Building automated deployment scripts for the CICD pipeline using Ansible.
+            - Building automated deployment scripts for the CICD pipeline using Jenkins, git and Ansible.
             - Wrote custom Ansible module.
             - Worked hand in hand with the development team to ensure IAM and privilege access platforms availability.
     - name: Manpower
@@ -122,3 +125,11 @@ academics:
       location: Montréal, QC, Canada
       program:  Bachelor of Engineering - Computer Engineering
       obtained: 2011
+
+text:
+  latest_available: Latest version available at
+  until: until
+  years_experience: years of experience.
+  project_source: See the project and source code at
+  html_version: HTML version available at
+  created_with: This resume was created with
