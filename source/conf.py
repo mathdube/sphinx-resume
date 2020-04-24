@@ -83,19 +83,21 @@ html_context = {
 
 def rstjinja(app, docname, source):
     """
-    Render our pages as a jinja template for fancy templating goodness.
+    Followed the approach from https://www.ericholscher.com/blog/2016/jul/25/integrating-jinja-rst-sphinx/
+
+    Thanks for the tip.
     """
 
     # Make sure we're outputting HTML
     if app.builder.format != 'html':
         return
 
-    yml_file = "source/locale/{}.yaml".format(language)
+    yml_file = f"source/locale/{language}.yaml"
 
     html_context["index_name"] = f"index_{language}.html" if language != "en" else "index.html"
 
     with open(yml_file, 'r', encoding='utf8') as f:
-        cv_data = yaml.load(f)
+        cv_data = yaml.safe_load(f)
     html_context["cv_data"] = cv_data
     src = source[0]
     rendered = app.builder.templates.render_string(
@@ -106,7 +108,7 @@ def rstjinja(app, docname, source):
 
 def setup(app):
     app.connect("source-read", rstjinja)
-    app.add_stylesheet('custom.css')
+    app.add_css_file('custom.css')
 
 
 
