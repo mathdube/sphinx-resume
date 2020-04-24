@@ -28,7 +28,7 @@ if errorlevel 9009 (
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O% -E -D language=fr
 copy %BUILDDIR%\html\index.html %BUILDDIR%\html\index_fr.html
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O% -E -D language=en
-echo "" > %BUILDDIR%\html\.nojekyll
+echo "" > %BUILDDIR%\.nojekyll
 goto end
 
 :help
