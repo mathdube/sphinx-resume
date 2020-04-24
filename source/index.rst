@@ -2,11 +2,18 @@
 Mathieu Dubé
 ==============================================================
 
++---------------------+---------------------------------+
+|**Email**            | math.dube@gmail.com             |
++---------------------+---------------------------------+
+|**LinkedIn**         | www.linkedin.com/in/mathieudube |
++---------------------+---------------------------------+
+
+
 **{{years_experience}} {{cv_data.text.years_experience}}**
 
 **{{cv_data.profile.tag}}**
 
-{{cv_data.text.latest_available}}  https://mathdube.github.io/sphinx-resume/html/
+{{cv_data.text.latest_available}}  https://mathdube.github.io/sphinx-resume/html/{{index_name}}
 
 .. toctree::
    :maxdepth: 2
@@ -54,10 +61,11 @@ Obtained {{ p.obtained  }}
 {% endfor %}
 
 .. note:: {{cv_data.text.created_with}}
-    * Python
-    * Sphinx
-    * Jinja2 templates.
 
-   {{cv_data.text.project_source}} https://github.com/mathdube/sphinx-resume
+  * Python {{python_version}}
+  * Sphinx
+  * Jinja2 templates.
 
-   {{cv_data.text.html_version}} https://mathdube.github.io/sphinx-resume/html/
+  {{cv_data.text.project_source}} https://github.com/mathdube/sphinx-resume
+
+  {{cv_data.text.html_version}} https://mathdube.github.io/sphinx-resume/html/{{index_name}}

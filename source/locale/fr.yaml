@@ -74,7 +74,7 @@ experiences:
       titles:
         - title: Spécialist Web et IAM - Délivrance de projets.
           activites:
-            - Installation et configuration de la nouvelle infrastructure de siteminder version 6.0 vers la version 12.5.
+            - Mise à niveau de l'infrastructure de Siteminder de version 6.0 vers 12.5.
             - Installation des serveur, installation et configuration la permière solution F5 LTM pour le remplacement de Cisco.
             - Assistances des projets pour la configuration de leur solution IAM et guidelines de sécurité.
             - Administration des serveur et service LDAP avec l'aide de scripts.

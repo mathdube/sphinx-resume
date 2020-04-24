@@ -1,6 +1,7 @@
 import json
 import yaml
 import datetime
+from platform import python_version
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -73,10 +74,11 @@ first_day = datetime.datetime.fromtimestamp(1304254800)
 
 years_experience = round((datetime.datetime.now() - first_day).days / 365)
 
+
 html_context = {
-    #"'cv_data': cv_data,
     'today': today,
-    'years_experience': years_experience
+    'years_experience': years_experience,
+    'python_version': python_version(),
 }
 
 def rstjinja(app, docname, source):
@@ -90,7 +92,8 @@ def rstjinja(app, docname, source):
 
     yml_file = "source/locale/{}.yaml".format(language)
 
-    print(yml_file)
+    html_context["index_name"] = f"index_{language}.html" if language != "en" else "index.html"
+
     with open(yml_file, 'r', encoding='utf8') as f:
         cv_data = yaml.load(f)
     html_context["cv_data"] = cv_data
