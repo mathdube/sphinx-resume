@@ -13,3 +13,7 @@ div.bodywrapper {
 ul {
     border: 0;
 }
+
+div.body{
+    min-width: 50px;
+}
