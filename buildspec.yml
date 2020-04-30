@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.x
+      git: 2.x
+    commands:
+      - python3 -m venv venv
+      - source venv/bin/activate
+      - pip3 install -r requirement.txt
+  build:
+    commands:
+      - make html
+  post-build:
+    commands:
+      - aws s3 cp s3://resume-project/id_rsa ~/id_rsa_git
+      - echo -e "host github.com\n HostName github.com\n IdentityFile ~/id_rsa_git\n User root" > ~/.ssh/config
+      - chmod 400 ~/id_rsa_git; chmod 400 ~/.ssh/config
+      - git add docs
+      - git commit -m "Auto-built and commit new version."
+      - git push ssh://git@github.com/mathdube/sphinx-resume.git
