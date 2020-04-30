@@ -24,6 +24,4 @@ phases:
       - git config --global user.name "AWS auto commit"
       - git add docs
       - git commit -m "Auto-built and commit new docs version."
-      - git branch
-      - git info
       - git push ssh://git@github.com/mathdube/sphinx-resume.git
