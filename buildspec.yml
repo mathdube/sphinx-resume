@@ -8,6 +8,10 @@ phases:
       - python3 -m venv venv
       - source venv/bin/activate
       - pip3 install -r requirements.txt
+  pre_build:
+    commands:
+      - git clone https://github.com/mathdube/sphinx-resume.git
+      - cd sphinx-resume
   build:
     commands:
       - make html
@@ -19,5 +23,7 @@ phases:
       - git config --global user.email "math.dube@gmail.com"
       - git config --global user.name "AWS auto commit"
       - git add docs
-      - git commit -m "Auto-built and commit new version."
+      - git commit -m "Auto-built and commit new docs version."
+      - git branch
+      - git info
       - git push ssh://git@github.com/mathdube/sphinx-resume.git
