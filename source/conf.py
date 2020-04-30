@@ -1,6 +1,7 @@
 import json
 import yaml
 import datetime
+import sphinx
 from platform import python_version
 
 # Configuration file for the Sphinx documentation builder.
@@ -79,6 +80,7 @@ html_context = {
     'today': today,
     'years_experience': years_experience,
     'python_version': python_version(),
+    'sphinx_version': sphinx.__version__,
 }
 
 def rstjinja(app, docname, source):

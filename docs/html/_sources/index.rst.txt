@@ -63,7 +63,7 @@ Obtained {{ p.obtained  }}
 .. note:: {{cv_data.text.created_with}}
 
   * Python {{python_version}}
-  * Sphinx
+  * Sphinx {{sphinx_version}}
   * Jinja2 templates.
 
   {{cv_data.text.project_source}} https://github.com/mathdube/sphinx-resume

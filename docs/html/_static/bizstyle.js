@@ -36,6 +36,6 @@ $(window).resize(function(){
         $("li.nav-item-0 a").text("Top");
     }
     else {
-        $("li.nav-item-0 a").text("Mathieu`s Resume 24 April, 2020	 documentation");
+        $("li.nav-item-0 a").text("Mathieu`s Resume 30 April, 2020	 documentation");
     }
 });
