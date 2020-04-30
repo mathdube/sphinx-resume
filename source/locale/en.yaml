@@ -19,7 +19,7 @@ experiences:
   companies:
     - name: Morgan Stanley
       from: January 2019
-      until: present
+      until: now
       location: Hong Kong
       titles:
         - title: Devops IAM and Privilege Access Products
