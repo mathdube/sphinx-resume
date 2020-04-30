@@ -4,7 +4,6 @@ phases:
   install:
     runtime-versions:
       python: 3.x
-      git: 2.x
     commands:
       - python3 -m venv venv
       - source venv/bin/activate
