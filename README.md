@@ -57,7 +57,7 @@ https://pages.github.com/
 
 GitHub hosts the source code and I also redeploy the artifacts back to GitHub Pages. 
 
-The pages build by this are static and GitHub Pages is a free and simple hosting service so I
+The pages build by this are static and GitHub Pages is a free and easy hosting service so I
  just put back the page back there.
 
 ### AWS CodeBuild
@@ -91,7 +91,7 @@ the process mainly loads the data from the yaml file and runs the templating on 
     )
 ```
 
-- From the make file I run this process twice, once in french and then in english. It's a bit of a hack for a simple
+- From the make file I run this process twice, once in french and then in english. It's a bit of a hack for a 
 multilingual build
 
 ```bash
@@ -100,21 +100,24 @@ cp $(BUILDDIR)/html/index.html $(BUILDDIR)/html/index_fr.html
 @$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O) -E -D language=en
 ```
 
-- The resulting pages are placed in docs/ and can simply be pushed back to GitHub Pages as-is.
+- The resulting pages are placed in docs/ and can be pushed back to GitHub Pages as built.
 
 ### Build and deploy on cloud.
 
 The whole set of steps can be achieved locally, but I thought that down the road it might be fun to not have to worry
 about where I'm building this, it's also a cool way to try out AWS CodeBuild.
 
-- `buildspec.yml` Instructions on how to build are put in the buildspec.yml file. Typically they're simply commands 
-or in some cases packages to install as prereqs. This is done in four stages.
+- **Build instructions** Instructions on how to build are put in the `buildspec.yml` file.
+When the AWS CodeBuild project is setup and run this file will be loaded from source code and executed by CodeBuild.
+Typically they're commands or in some cases packages to install as prereqs. 
+This is done in four stages: install, pre-build, build and post-build.
 
-- `requirements.txt` contains the python packages that we need to build a successful project.
-To install them I simply setup a python venv and do a pip install from the  `requirements.txt` file
+- **Python prerequisites** `requirements.txt` contains the python packages that we need to build a successful project.
+To install them I setup a python venv and do a pip install from the `requirements.txt` file
 
-- `make html` is invoke just like before to create the artifacts in docs/
+- **Buidling** `make html` is invoke just like in the previous section by CloudBuild 
+as per the instructions in the `buildspect.yaml` to create the artifacts in docs/.
 
-- I setup a deploy key in GitHub and placed that key in a dedicated S3 bucket accessible to my AWS CodeBuild project.
+- **Deploying** : I setup a deploy key in GitHub and placed that key in a dedicated S3 bucket accessible to my AWS CodeBuild project.
 Once the artifacts are ready, in the post-build I just pull the key, add docs/ to the 
 commit and push it back to GitHub Pages.
