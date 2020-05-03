@@ -58,7 +58,7 @@ https://pages.github.com/
 GitHub hosts the source code and I also redeploy the artifacts back to GitHub Pages. 
 
 The pages build by this are static and GitHub Pages is a free and easy hosting service so I
- just put back the page back there.
+ just put the page back there.
 
 ### AWS CodeBuild
 
