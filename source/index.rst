@@ -28,7 +28,7 @@ Mathieu Dubé
 {{ cv_data.certifications.title }}
 =========================================================================
 {% for p in cv_data.certifications.certificate %}
-**{{ p.name }}** ( p.id ) : {{ p.obtained  }}
+**{{ p.name }}** ( {{ p.id }} ) : {{ p.obtained  }}
 {% endfor %}
 
 
