@@ -130,6 +130,7 @@ certifications:
   title: Certifications
   certificate:
     - name: CISSP
+      id: 631312
       obtained: September 2020
 
 text:
