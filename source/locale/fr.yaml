@@ -124,6 +124,12 @@ academics:
       program:  Baccalauréat en génie  - Génie Informatique
       obtained: 2011
 
+certifications:
+  title: Certifications
+  certificate:
+    - name: CISSP
+      obtained: Septembre 2020
+
 text:
   latest_available: La version la plus récente disponible ici
   until: jusqu'à

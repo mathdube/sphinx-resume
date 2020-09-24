@@ -126,6 +126,12 @@ academics:
       program:  Bachelor of Engineering - Computer Engineering
       obtained: 2011
 
+certifications:
+  title: Certifications
+  certificate:
+    - name: CISSP
+      obtained: September 2020
+
 text:
   latest_available: Latest version available at
   until: until
