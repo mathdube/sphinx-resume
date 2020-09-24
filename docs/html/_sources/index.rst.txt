@@ -25,6 +25,13 @@ Mathieu Dubé
 
 {{ cv_data.profile.text }}
 
+{{ cv_data.certifications.title }}
+=========================================================================
+{% for p in cv_data.certifications.certificate %}
+**{{ p.name }}** : {{ p.obtained  }}
+{% endfor %}
+
+
 {{ cv_data.experiences.title }}
 =========================================================================
 
@@ -43,6 +50,7 @@ Mathieu Dubé
 {% endfor %} {# Activies #}
 {% endfor %} {# Titles #}
 {% endfor %} {# Companies #}
+
 
 {{ cv_data.academics.title }}
 =========================================================================
