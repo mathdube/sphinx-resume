@@ -36,6 +36,7 @@ Mathieu Dubé
 =========================================================================
 
 {% for c in cv_data.experiences.companies %}
+.. rst-class:: unbreakable
 {{c.name}}
 #########################################################################
 {{ c.from }} {{cv_data.text.until}} {{ c.until  }} | {{c.location}}

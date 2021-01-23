@@ -17,3 +17,7 @@ ul {
 div.body{
     min-width: 50px;
 }
+
+.unbreakable {
+    page-break-inside: avoid;
+}
