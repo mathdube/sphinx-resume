@@ -3,6 +3,7 @@ import yaml
 import datetime
 import sphinx
 from platform import python_version
+from math import floor
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -73,7 +74,7 @@ html_static_path = ['_static']
 
 first_day = datetime.datetime.fromtimestamp(1304254800)
 
-years_experience = round((datetime.datetime.now() - first_day).days / 365)
+years_experience = floor((datetime.datetime.now() - first_day).days / 365)
 
 
 html_context = {
