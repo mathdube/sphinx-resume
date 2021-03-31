@@ -135,6 +135,8 @@ text:
   latest_available: La version la plus récente disponible ici
   until: jusqu'à
   years_experience: années d'expérience.
+  obtained: Obtenu
+  expires: Expire
   project_source: Voir le projet et le code source ici
   html_version: La version HTML est disponible ici
   created_with: Ce CV a été créé a l'aide de

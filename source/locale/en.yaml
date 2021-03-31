@@ -132,11 +132,17 @@ certifications:
     - name: CISSP
       id: 631312
       obtained: September 2020
+      expires: September 2023
+    - name: AWS Certified Solutions Architect - Associate (SAA-C02)
+      obtained: March 2021
+      expires: March 30th, 2024
 
 text:
   latest_available: Latest version available at
   until: until
   years_experience: years of experience.
+  obtained: Obtained
+  expires: Expires
   project_source: See the project and source code at
   html_version: HTML version available at
   created_with: This resume was created with
