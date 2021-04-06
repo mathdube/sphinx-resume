@@ -24,6 +24,7 @@ experiences:
       titles:
         - title: Devops IAM and Privilege Access Products
           activites:
+            - Administration of on-premise products permitting privileged access to cloud infrastructure (AWS and Azure) for the whole Firm.
             - Automation of operational tasks using python.
             - Building automated deployment scripts for the CICD pipeline using Jenkins, git and Ansible.
             - Wrote custom Ansible module.

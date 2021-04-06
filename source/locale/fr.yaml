@@ -22,6 +22,7 @@ experiences:
       titles:
         - title: Devops IAM et gestion des accès privilégiés
           activites:
+            - Administration des platformes pour l'accès privilégié vers l'infrastructure cloud (AWS et Azure) pour toute l'entreprise.
             - Automatisation des procédures avec Python.
             - Configurations de pipelines automatisée CICD avec Jenkins, Git et Ansible
             - Dévelopement de module Ansible pour les besoins de l'entreprise.
@@ -130,6 +131,10 @@ certifications:
     - name: CISSP
       id: 631312
       obtained: Septembre 2020
+    - name: AWS Certified Solutions Architect - Associate (SAA-C02)
+      obtained: March 2021
+      expires: March 30th, 2024
+
 
 text:
   latest_available: La version la plus récente disponible ici
