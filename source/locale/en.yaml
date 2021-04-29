@@ -8,11 +8,11 @@ contact:
 
 profile:
   title: Profile
-  tag: Security Specialist - Identity and Access management - Web and API security - Devops and project delivery
+  tag: Devops and project delivery - Automation in the Identity and privileged access, Web and API security space.
   text:
-    I have many years of experience in the Identity and Access management and API endpoints space helping customers design and build their security architecture.
+    I have many years of experience building and automating in the Identity and Access management, Web and API endpoints space helping customers design and build their security architecture with automation at its core.
 
-    I'm also interested in programming, primilary Python, both as a hobby and as a way to automate away the day to day repetitions of tasks.
+    I'm always trying to be a better programmer, primarily with Python. As a hobby I enjoy testing my practical security skills on CTF platforms like Hack the Box or Try Hack Me.
 
 experiences:
   title: Professional experiences
