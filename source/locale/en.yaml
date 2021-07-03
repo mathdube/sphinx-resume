@@ -138,6 +138,9 @@ certifications:
     - name: AWS Certified Solutions Architect - Associate (SAA-C02)
       obtained: March 2021
       expires: March 30th, 2024
+    - name: AWS Certified Security - Specialty (SCS-C01)
+      obtained: June 2021
+      expires: June 30th, 2024
 
 text:
   latest_available: Latest version available at

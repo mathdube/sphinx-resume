@@ -5,7 +5,7 @@ pushd %~dp0
 REM Command file for Sphinx documentation
 
 if "%SPHINXBUILD%" == "" (
-	set SPHINXBUILD=C:\Python38-32\Scripts\sphinx-build.exe
+	set SPHINXBUILD=.\venv\Scripts\sphinx-build.exe
 )
 set SOURCEDIR=source
 set BUILDDIR=docs
